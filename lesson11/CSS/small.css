@@ -1,0 +1,554 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+
+
+body{
+    margin: 0 auto;
+    background-color: #a3daff;
+}
+header  {
+    background-image: linear-gradient( #005DB3, #1C9CF6 , #48b3ff);
+    padding: 5px 0;
+	display: flex;
+    color: #FFFFFA;
+   
+   align-content:center;
+	justify-content:center;
+
+
+    }
+
+
+#logo {
+	width:20%;
+    height: auto;
+}
+
+.headings {
+	display: flex;
+	flex-direction: column;
+}
+
+.headings h1 {
+	font-size: 1.6rem;
+    margin: 0 0 0 15px;
+    font-family: 'Merriweather Sans', sans-serif;
+   text-align: center;
+    color :#FFFFFA;
+    margin-top: 0.3em;
+}
+
+.motto {
+    font-family:'Source Sans Pro', sans-serif;
+    font-style:italic;
+	letter-spacing: 1pt;
+    color :#FFFFFA;
+	margin-left: 20px;
+	font-size: 14px;
+}
+
+
+
+nav button{
+    margin: .2rem 2%;
+    background-color: transparent;
+    border:none;
+    font-size: 1.6rem;
+    color: #fff;
+    
+}
+
+nav{
+    
+
+   background-color:#1C9CF6;
+   font-family: 'Merriweather Sans', sans-serif;
+   font-size: 18px;
+}
+
+nav ul{
+    list-style-type: none;
+    padding:0;
+    margin:0;
+}
+
+nav ul li a{
+    display:block;
+    padding: .8rem 2%;
+    text-decoration: none;
+    color: #FFFFFA;
+    border-top:1px solid rgba(0,0,0,0.3);
+    
+    
+}
+nav ul li.active a{background-color:  rgba(39, 36, 36, 0.2); color:#fff;}
+
+nav ul li a:hover{
+    background-color: #005DB3 ;
+    color:#FFFFFA ;
+    
+    
+}
+
+nav ul.hide{
+    display:none;
+}
+
+
+
+main {
+    margin:0 auto;
+
+}
+
+#idaho-home{
+    width:100%;
+}    
+
+/*PRESTON - SODA SPRINGS - FISH HAVEN BASIC PAGES*/
+ 
+.pages-section {margin: 10px auto;
+    position: relative;
+    background-image: linear-gradient( #1499f8,#1C9CF6 , #48b3ff);
+    }
+
+    
+#title {margin: 0;
+    margin-top: 0.7em;
+    padding:20px;
+    font-size: 48px;
+    color: #005DB3;
+    font-family: 'Merriweather Sans', sans-serif;
+text-align: center;}
+
+#title-gallery {margin: 0;
+        margin-top: 1em;
+        margin-left: 1em;
+        padding:10px;
+        color:#FFFFFA;
+        font-family: 'Merriweather Sans', sans-serif;}
+
+.current-weather {
+	position: absolute;
+    border: 3px  solid;
+    border-color:#1C9CF6 ;
+     top: 20px;
+     left: 10px;
+     color:#043869;
+     opacity: .92;
+     font-size: 10px;
+     background-color:#fcfbf6;
+     max-width:100%;
+     padding: 5px;
+     font-family:'Source Sans Pro', sans-serif; 
+     max-height: 100%;
+  
+     
+}
+
+.current-weather p {
+    margin-top: -0.5em;
+    margin-left: 0.5em;
+ 
+}
+.current-weather h2 {
+    margin-top: 0.3em;
+    margin-left: 0.em;
+ 
+}
+
+
+
+
+#preston-image , #idaho-home{
+    width: 100%;
+    padding:10px;
+}
+
+
+#forecast-title {
+  margin-top: 1em;
+  text-align: center;
+  font-family: 'Merriweather Sans', sans-serif;
+  color: #043869;
+  
+}
+
+.forecast{
+    display: flex;
+    justify-content: space-around;
+     background-color: #48b3ff;
+    border: 4px solid;
+    border-color: #0963b8;
+    padding:10px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 2em;
+    font-family:'Source Sans Pro', sans-serif;
+    color:#FFFFFA;
+    width:900px;
+    max-width:100%;
+    }
+    
+    
+    
+    
+    .forecast-day img{
+       
+       margin-top: -10em;
+        margin: 0 auto;
+    }
+
+#events-title{
+    margin-top: 2em;
+    text-align: center;
+    font-family: 'Merriweather Sans', sans-serif;
+    color: #043869;
+    
+  }
+
+#events {
+    
+
+ background-color: #48b3ff;
+border: 4px solid;
+border-color: #0963b8;
+padding:10px;
+margin: 0 auto;
+text-align: center;
+margin-top: 2em;
+font-family:'Source Sans Pro', sans-serif;
+color:#FFFFFA;
+width:400px;
+max-width:100%;
+  }
+
+
+
+
+
+.article-section{
+    
+    margin: 10px auto;
+    position:static;
+    color:#FFFFFA;
+    font-family:'Source Sans Pro', sans-serif; 
+    margin-top:3em;
+    width:100%;
+    padding: 25px;
+    
+   
+   
+
+}
+.article{
+padding:10px;
+background-color: #48b3ff;
+border: 4px solid;
+border-color: #0963b8;
+
+}
+.article h1, .author{
+    color: #043869;
+}
+
+.article-image{
+    padding:8px;
+    width: 100%;
+    height: 100%;
+    margin-top: 3em;
+  
+}
+#soda-article-image{
+    width: 100%;
+    margin-top: 1em;
+}
+#map-image{
+  width:100%;
+  max-width: 400px;
+  margin-left: 2em;
+  
+  
+}
+#contact-title{
+    margin-top: 2em;
+    text-align: center;
+    font-family: 'Merriweather Sans', sans-serif;
+    color: #043869;
+ 
+      
+    
+}
+
+  
+
+.contact {
+    
+     height:210px;
+    margin: 10px auto;
+    position:static;
+    color:#FFFFFA;
+    font-family:'Source Sans Pro', sans-serif; 
+    margin-top:2em;
+    width:100%;
+
+}
+
+
+
+.contact p{
+    margin-left:0.5em;
+   
+}
+
+#instagram{
+ padding-left: 10px;   
+}
+
+
+.contact-group {
+    display: flex;
+    align-items: center;
+    margin-left: 2em;
+}
+
+#byuLink{
+    color:#FFFFFA;
+    font-family:'Source Sans Pro', sans-serif;
+}
+
+#friday-banner{
+    display:none;
+    position:sticky;
+    top: 0;
+    z-index: 1;
+    color:#FFFFFA;
+    font-family:'Source Sans Pro', sans-serif;
+    font-size: 20px;
+   height:50px;
+   text-align: center;
+   background-image: linear-gradient( #005DB3, #1C9CF6 , #48b3ff);
+    color: #FFFFFA;
+}
+  footer  {
+    background-image: linear-gradient( #005DB3, #1C9CF6 , #48b3ff);
+    padding: 5px 0;
+    margin: auto;
+    text-align: center;
+  
+    }
+    footer p {
+        font-family: 'Merriweather Sans', sans-serif;
+        color:#FFFFFA;
+        
+        }
+.links{
+            font-family:'Source Sans Pro', sans-serif;
+            color: #FFFFFA;
+        }
+        
+.links:hover{
+            
+background-color: #005DB3;
+color:#FFFFFA;
+        }
+.clearfix:after {
+     content: "";
+    display: table;
+     clear: both;
+ }
+
+ /*GALLERY*/
+ .preston-gallery {margin: 1rem auto;
+    display:grid;
+     grid-template-columns: 1fr; 
+     grid-gap: 20px;
+     max-width: 560px;}
+
+
+
+picture img { 
+    width: 100%;
+    height: auto; 
+    margin: 0 auto; }
+
+     figcaption{
+       font-family: 'Merriweather Sans', sans-serif;
+       font-size:16px;
+       color: #005DB3;
+       padding-left: 10px;
+      
+     }
+     picture img[data-src] {
+        filter: blur(0.2em);
+       
+      }
+      
+     picture img {
+        filter: blur(0em);
+        transition: filter 0.1s;
+        padding: 10px;
+        
+      }
+    
+    
+  /*FORM AND THANK YOU PAGE*/  
+
+  .title-page{
+    font-family: 'Merriweather Sans', sans-serif;
+    color: #043869;
+    
+}
+
+
+  form{
+    background-color: #005DB3;
+    padding:10px;
+    font-family: 'Merriweather Sans', sans-serif;
+    color:#FFFFFA;
+    width:100%;
+    
+}
+
+fieldset{
+    background-color:#1C9CF6 ;
+    
+   
+}
+
+.form-input{
+    padding:10px;
+    border: 3px solid;
+    border-color:#FFFFFA;
+    margin-top: 1em;
+}
+
+input{
+  
+    display:flex;
+    padding:12px;
+    margin-top: 0.5em;
+    
+}
+input:hover{
+    background-color: #1C9CF6;
+    color:#FFFFFA;
+}
+
+
+
+#region, #rating-list {
+    margin-top: 1.5em;
+}
+
+
+#rating{
+    color:#FFFFFA;
+    padding:10px;
+   background-color: #FFCD00;
+   width:100%;
+   max-width:300px;
+}
+
+#ratingvalue{
+    font-size: 16px;
+    
+}
+
+#comment{
+    width:100%;
+    height:200px;
+}
+
+
+.button {
+    
+    width: 85px;
+    height:35px;
+    font-size: 18px;
+    font-family:'Source Sans Pro', sans-serif;
+    color:#FFFFFA;
+    background-color: #005DB3;
+    margin: auto 0;
+    padding:5px;
+    justify-content: center;
+    
+}
+
+.button:hover{
+    background-color: #FFFFFA;
+    color: #005DB3;
+}
+ 
+#thank-you{
+    background-color: #FFFFFA;
+    border: 5px solid;
+    border-color:#005DB3;
+    padding:10px;
+    margin: auto 0;
+     text-align: center;
+     margin-top: 4em;
+     font-family:'Source Sans Pro', sans-serif;
+     color:#1C9CF6;
+     width:100%;
+}
+
+/*HOME PAGE*/
+div.places{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 5px;
+   margin: 0 auto;
+   padding:10px;
+}
+
+
+.info h2{
+font-family: 'Merriweather Sans', sans-serif;
+color: #FFFFFA;
+text-align: center;
+}
+
+.info p{
+font-family:'Source Sans Pro', sans-serif;
+color: #FFFFFA;
+text-align: center;
+}
+
+.places div{
+    background-color: #48b3ff;
+  
+}
+.places h2 p {
+    color: #005DB3;
+}
+
+.town img {
+max-width: 100%; 
+display: flex;
+height: 200px; 
+margin: 0 auto;
+
+
+}
+h3{
+font-style: italic;
+font-family:'Source Sans Pro', sans-serif;
+color: #005DB3;
+text-align: center;
+font-size: 16px;
+
+}
+
+.town{
+    
+border: 4px solid;
+border-color: #0963b8;
+}
+
+
