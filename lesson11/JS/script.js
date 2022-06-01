@@ -57,6 +57,8 @@ function adjustRating(rating) {
   document.getElementById("ratingvalue").innerHTML = rating;
 }
 
+
+
 //Town JS
 const requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
 
@@ -93,17 +95,20 @@ fetch(requestURL)
       rainFall.innerHTML = `Average Rain fall: ${towns[i].averageRainfall}`; 
       images.setAttribute( "src", "images/" + towns[i].photo);
       images.setAttribute( "alt", `${towns[i].photo}`);
-        
+      
+      townName.append(images);
       townName.append(info);
       info.append(h2);
       info.append(motto);
-      info.append(year);
-      info.append(population);
-      info.append(rainFall);
-      townName.append(images);
+      //info.append(year);
+     // info.append(population);
+     // info.append(rainFall);
+     
       //output
       document.querySelector("div.places").append(townName);
       }
+
+     
       }
       
      
