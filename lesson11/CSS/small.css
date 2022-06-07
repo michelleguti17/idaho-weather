@@ -19,7 +19,7 @@ body{
     position: relative;
  
     
- background-image: linear-gradient(to right, #3b9cd8, #00a7cf, #cec76b, #e69292, #1b85c7);
+ background-image: linear-gradient(to right, #3b9cd8, #00a7cf, #cec76b,  #f7abaf,#1b85c7,#3b9cd8);
     background-size: 600%;
     background-position: 0 0;
     animation-duration: 20s;
@@ -95,6 +95,11 @@ nav button{
 }
 
 nav{
+
+
+    position: relative;
+    z-index: 2;
+
     padding:10px;
    margin-top: -1em;
    font-family: 'Merriweather Sans', sans-serif;
@@ -121,7 +126,7 @@ nav ul li.active a{ border-radius: 5px; background-color:  rgba(39, 36, 36, 0.2)
 
 nav ul li a:hover{
     text-decoration: underline #FFFFFA;
-    color:#FFFFFA ;
+    color:#1b85c7 ;
     
     
 }
@@ -147,6 +152,7 @@ main {
 .wave:before{
    content: '';
    position:absolute;
+  
    bottom: 0;
    left: 0;
    width: 100%;
@@ -448,7 +454,7 @@ box-shadow:-4px 8px 8px rgba(0,0,0,0.1), -8px 16px 16px rgba(0,0,0,0.1), -16px 3
 
 .article-city{
     font-family:'Source Sans Pro', sans-serif; 
-    padding:10px;
+    padding:25px;
     border-radius:20px;
     background-image: linear-gradient(to right, #3b9cd8, #00a7cf,#1b85c7);
     background-size: 600%;
@@ -483,15 +489,16 @@ box-shadow:-4px 8px 8px rgba(0,0,0,0.1), -8px 16px 16px rgba(0,0,0,0.1), -16px 3
     margin-top: 1em;
 }
 
-.preston-map{
-    width:300px;
-   margin-left: 4em;
-   border-radius: 20px;
- 
-  }
 
+
+  .preston-map{
+    width:300px;
+    margin-left:2em;
+    border-radius: 20px;
+  }
 #contact-title{
     margin-top: 2em;
+  
     text-align: center;
     font-family: 'Merriweather Sans', sans-serif;
     color: #1b85c7;
@@ -506,7 +513,7 @@ box-shadow:-4px 8px 8px rgba(0,0,0,0.1), -8px 16px 16px rgba(0,0,0,0.1), -16px 3
     
      height:210px;
     margin: 10px auto;
-    margin-left:3em;
+  
     color:#1b85c7;
     font-family:'Source Sans Pro', sans-serif; 
   
@@ -530,9 +537,8 @@ box-shadow:-4px 8px 8px rgba(0,0,0,0.1), -8px 16px 16px rgba(0,0,0,0.1), -16px 3
 .contact-group {
     display: flex;
     align-items: center;
-    
     margin-left: 2em;
-    flex-direction: row;
+
 }
 
 #byuLink{
@@ -604,21 +610,19 @@ picture img {
      }
      picture img[data-src] {
         filter: blur(0.2em);
+     
        
       }
       
      picture img {
         filter: blur(0em);
         transition: filter 0.1s;
-      
+   
         padding: 10px;
         border-radius: 20px;
       }
 
-      picture img:hover{
-        transform: scale(1.1);
-        transition: all .4s ease;
-      }
+      
     
     
   /*FORM AND THANK YOU PAGE*/  
@@ -632,7 +636,7 @@ picture img {
 
   form{
       border-radius: 20px;
- 
+     font-size: 16px;
     padding:10px;
     font-family: 'Merriweather Sans', sans-serif;
     color:#FFFFFA;
@@ -640,7 +644,13 @@ picture img {
     background-image: #fffffa;
   border:none;
 }
-
+form h2{
+    font-size: 20px;
+    margin-top: -0.1em;
+}
+#comment-h2{
+    margin-top: 1em;
+}
 fieldset{
     
     border-radius: 20px;
@@ -700,9 +710,9 @@ input{
 #comment{
     border-radius: 15px;
     width:100%;
-    height:180px;
+    height:170px;
     border:none;
-    padding:15px;
+    
 }
 
 
@@ -716,6 +726,7 @@ input{
     background-color: #1878b4;
     border:none;
     margin: auto 0;
+    margin-top: 1em;
     padding:5px;
     justify-content: center;
     
@@ -791,13 +802,7 @@ z-index: 1;
   
 }
 
-.town img:hover{
 
-  
-  
-    transform: scale(1.2);
-    transition: all .4s ease;
-}
 h3{
 font-style: italic;
 font-family:'Source Sans Pro', sans-serif;

@@ -37,14 +37,22 @@
 
 
   nav button {display:none;}
-   
+  nav ul li a:hover{
+    text-decoration: underline #FFFFFA;
+    color:#FFFFFA;
+    
+    
+}
+#site-title{
+  font-size: 52px;
+}
   .site-title {
    position:absolute;
    font-size: 72px;
    color: #FFFFFA;
    font-family: 'Merriweather Sans', sans-serif;
    margin-top: 1.5em;
-   left:18%;
+   left:17%;
   }
   #preston-title, #soda-title{
     font-size: 80px;
@@ -58,7 +66,9 @@
        
       }
 
- 
+      #home-title{
+        margin-top: 0.6em;
+      }
 
   
  .preston-img img , .soda-img img , .fish-img img{
@@ -149,16 +159,22 @@
     #instagram{
       margin-left: -0.3em;
     }
+    .contact{
+      padding:20px;
+    }
 
     .contact-section{
+      display: flex;
+     
       position: relative;
       height: 400px;
       max-height: 100%;
-      margin-left:-4em;
+      margin-left: 10em;
     }
    
   .preston-map{
     width:300px;
+  
   }
       
 footer{
@@ -207,26 +223,18 @@ textarea{
 /*HOME TOWN*/
 
 
-.blue{
-  position: relative;
-  width: 500%;
-  height:450px;
-  margin-left: -200%;
-  background-image: linear-gradient( #1b85c7,#269ce6 ,#1C9CF6 );
-  padding: 20px;
-  
-}
+
 
 
 
 
 .article{
 
-  width:70%;
+
   position: absolute;
   font-family:'Source Sans Pro', sans-serif; 
-  z-index: 2;
-  top:185%;
+  z-index: 3;
+
   margin: 0 auto;
   border-radius: 0px;
   box-shadow: none;
@@ -287,7 +295,7 @@ div.places{
  
   }
  .border-photo{
-  left: 59%;
+  left: 62%;
    position:relative; 
    z-index:1;
   width:300px; 
