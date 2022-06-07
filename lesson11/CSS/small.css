@@ -15,6 +15,7 @@ body{
    
 }
 .gradient-background {
+    height:400px;
     position: relative;
  
     
@@ -38,12 +39,20 @@ header  {
     padding: 5px 0;
 	display: flex;
     color: #FFFFFA;
-   
+
    align-content:center;
 	justify-content:center;
 
 
     }
+ .city-body, footer{
+    background-image: linear-gradient(to right, #3b9cd8, #00a7cf,#1b85c7);
+    background-size: 600%;
+    background-position: 0 0;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-name: gradients;
+ }   
 
 
 #logo {
@@ -86,10 +95,11 @@ nav button{
 }
 
 nav{
-    
-
+    padding:10px;
+   margin-top: -1em;
    font-family: 'Merriweather Sans', sans-serif;
    font-size: 18px;
+
 }
 
 nav ul{
@@ -129,7 +139,7 @@ main {
 }
 
 .wave{
-    
+    width:100%;
     
     position: relative;
 
@@ -147,7 +157,7 @@ main {
 }
 
 
-#site-title {
+.site-title  {
     display: flex;
     position:absolute;
     font-size: 30px;
@@ -173,7 +183,7 @@ main {
 .border-photo{
     left:45%;
     display: flex;
-     position:relative; 
+     position:absolute; 
      z-index:1;
     width:160px; 
     height:250px; 
@@ -188,17 +198,44 @@ main {
     box-shadow:-4px 8px 8px rgba(0,0,0,0.1), -8px 16px 16px rgba(0,0,0,0.1), -16px 32px 32px rgba(0,0,0,0.15), -32px 64px 64px rgba(0,0,0,0.25);  
   }
 
-    
+
 
 /*PRESTON - SODA SPRINGS - FISH HAVEN BASIC PAGES*/
  
 .pages-section {margin: 10px auto;
-    margin-top: 5em;
+   margin-top: -2em;
     position: relative;
     /*background-image: linear-gradient( #1499f8,#1C9CF6 , #48b3ff);*/
     }
 
+.preston-img img , .fish-img img {
+  
+   position: relative;
+  transform: scale(1.02);
+    width:100%;
+    padding: 0;
+ 
+  
+
+}
+
+.soda-img img{
     
+   position: relative;
+    transform: scale(1.02);
+    width:100%;
+    padding: 0;
+    margin-top: 2em;
+  
+     
+   }
+   #current-soda{
+      top: -11%;
+   }
+
+   #current-fish{
+    top: -9%;
+ }
 #title {margin: 0;
     margin-top: 0.7em;
     padding:20px;
@@ -214,7 +251,7 @@ text-align: center;}
         color:#FFFFFA;
         font-family: 'Merriweather Sans', sans-serif;}
 
-.current-weather {
+/*.current-weather {
 	position: absolute;
     border: 3px  solid;
     border-color:#1C9CF6 ;
@@ -230,6 +267,39 @@ text-align: center;}
      max-height: 100%;
   
      
+}*/
+.all-weather{
+    display: flex;
+    flex-direction: row;
+}
+#cities-nav ul li a{
+    color: #FFFFFA;
+}
+
+.current-weather{
+    position: absolute;
+    top:-10%;
+     left: 62%;
+     
+     max-width:300px;
+     height:140px;
+     margin: 0 auto;
+    text-align: center;
+    font-family:'Source Sans Pro', sans-serif;
+    color:#1b85c7;
+     padding: 5px;
+     font-family:'Source Sans Pro', sans-serif; 
+     max-height: 100%;
+   font-size: 10px;
+   z-index: 2;
+   border-radius:20px;
+   background:linear-gradient(0.06deg, rgba(250, 250, 250, 1) 0%, 
+                                       rgba(246, 246, 246, 1) 29.62%, 
+                                       rgba(234, 234, 234, 1) 58.47%, 
+                                       rgba(215, 215, 215, 1) 86.92%, 
+                                       rgba(204, 204, 204, 1) 99.22%); 
+   box-shadow:-4px 8px 8px rgba(0,0,0,0.1), -8px 16px 16px rgba(0,0,0,0.1), -16px 32px 32px rgba(0,0,0,0.15), -32px 64px 64px rgba(0,0,0,0.25); 
+
 }
 
 .current-weather p {
@@ -238,42 +308,59 @@ text-align: center;}
  
 }
 .current-weather h2 {
-    margin-top: 0.3em;
-    margin-left: 0.em;
+   
+    font-size: 14px;
+    margin-top: 1em;
+  text-align: center;
+  font-family: 'Merriweather Sans', sans-serif;
+  color: #043869;
+
  
 }
 
 
 
 
-#preston-image , #idaho-home{
+ #idaho-home{
     width: 100%;
     padding:10px;
 }
 
 
 #forecast-title {
-  margin-top: 1em;
+  margin-top: 3em;
   text-align: center;
   font-family: 'Merriweather Sans', sans-serif;
-  color: #043869;
+  color: #1b85c7;
   
 }
 
 .forecast{
     display: flex;
     justify-content: space-around;
-     background-color: #48b3ff;
-    border: 4px solid;
-    border-color: #0963b8;
+    font-size: 10px;
+    
     padding:10px;
     margin: 0 auto;
     text-align: center;
     margin-top: 2em;
     font-family:'Source Sans Pro', sans-serif;
     color:#FFFFFA;
-    width:900px;
-    max-width:100%;
+    
+    max-width:85%;
+    border-radius:20px;
+    background-image: linear-gradient(to right, #3b9cd8, #00a7cf,#1b85c7);
+    background-size: 600%;
+    background-position: 0 0;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-name: gradients;
+   /* background:linear-gradient(0.06deg, rgba(250, 250, 250, 1) 0%, 
+                                        rgba(246, 246, 246, 1) 29.62%, 
+                                        rgba(234, 234, 234, 1) 58.47%, 
+                                        rgba(215, 215, 215, 1) 86.92%, 
+                                        rgba(204, 204, 204, 1) 99.22%); */
+    box-shadow:-4px 8px 8px rgba(0,0,0,0.1), -8px 16px 16px rgba(0,0,0,0.1), -16px 32px 32px rgba(0,0,0,0.15), -32px 64px 64px rgba(0,0,0,0.25); 
     }
     
     
@@ -283,17 +370,18 @@ text-align: center;}
        
        margin-top: -10em;
         margin: 0 auto;
+      
     }
 
 #events-title{
     margin-top: 2em;
     text-align: center;
     font-family: 'Merriweather Sans', sans-serif;
-    color: #043869;
+    color: #1b85c7;
     
   }
 
-#events {
+/*#events {
     
 
  background-color: #48b3ff;
@@ -307,22 +395,42 @@ font-family:'Source Sans Pro', sans-serif;
 color:#FFFFFA;
 width:400px;
 max-width:100%;
-  }
+  }*/
 
+  #events{
 
+  top: 14%;
+   left: 55%;
+   max-width:300px;
+  
+   margin: 0 auto;
+  text-align: center;
+  color:#FFFFFA;;
+   padding: 5px;
+   font-family:'Source Sans Pro', sans-serif; 
+   max-height: 100%;
 
-.article{
-padding:10px;
-
-
-
+ z-index: 2;
+ border-radius:20px;
+ background-image: linear-gradient(to right, #3b9cd8, #00a7cf,#1b85c7);
+ background-size: 600%;
+ background-position: 0 0;
+ animation-duration: 20s;
+ animation-iteration-count: infinite;
+ animation-name: gradients;
+/* background:linear-gradient(0.06deg, rgba(250, 250, 250, 1) 0%, 
+                                     rgba(246, 246, 246, 1) 29.62%, 
+                                     rgba(234, 234, 234, 1) 58.47%, 
+                                     rgba(215, 215, 215, 1) 86.92%, 
+                                     rgba(204, 204, 204, 1) 99.22%); */
+ box-shadow:-4px 8px 8px rgba(0,0,0,0.1), -8px 16px 16px rgba(0,0,0,0.1), -16px 32px 32px rgba(0,0,0,0.15), -32px 64px 64px rgba(0,0,0,0.25); 
 }
-
-.article-section{
+  .article-section{
     
     margin: 10px auto;
-    color:#0963b8;
-    font-family:'Source Sans Pro', sans-serif; 
+    position:static;
+    color:#FFFFFA;
+    
     margin-top:3em;
     width:100%;
     padding: 25px;
@@ -331,11 +439,40 @@ padding:10px;
    
 
 }
+.article{
+padding:10px;
+background-image: linear-gradient( #1b85c7,#269ce6 ,#1C9CF6 );
+border-radius: 20px;
+font-family:'Source Sans Pro', sans-serif; 
+box-shadow:-4px 8px 8px rgba(0,0,0,0.1), -8px 16px 16px rgba(0,0,0,0.1), -16px 32px 32px rgba(0,0,0,0.15), -32px 64px 64px rgba(0,0,0,0.25); 
+}
+
+.article-city{
+    font-family:'Source Sans Pro', sans-serif; 
+    padding:10px;
+    border-radius:20px;
+    background-image: linear-gradient(to right, #3b9cd8, #00a7cf,#1b85c7);
+    background-size: 600%;
+    background-position: 0 0;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-name: gradients;
+   /* background:linear-gradient(0.06deg, rgba(250, 250, 250, 1) 0%, 
+                                        rgba(246, 246, 246, 1) 29.62%, 
+                                        rgba(234, 234, 234, 1) 58.47%, 
+                                        rgba(215, 215, 215, 1) 86.92%, 
+                                        rgba(204, 204, 204, 1) 99.22%); */
+    box-shadow:-4px 8px 8px rgba(0,0,0,0.1), -8px 16px 16px rgba(0,0,0,0.1), -16px 32px 32px rgba(0,0,0,0.15), -32px 64px 64px rgba(0,0,0,0.25); 
+}
+
 .article h1, .author{
-    color: #043869;
+    color: #FFFFFA;
 }
 
 .article-image{
+
+   
+    border-radius:20px;
     padding:8px;
     width: 100%;
     height: 100%;
@@ -346,18 +483,19 @@ padding:10px;
     width: 100%;
     margin-top: 1em;
 }
-#map-image{
-  width:100%;
-  max-width: 400px;
-  margin-left: 2em;
-  
-  
-}
+
+.preston-map{
+    width:300px;
+   margin-left: 4em;
+   border-radius: 20px;
+ 
+  }
+
 #contact-title{
     margin-top: 2em;
     text-align: center;
     font-family: 'Merriweather Sans', sans-serif;
-    color: #043869;
+    color: #1b85c7;
  
       
     
@@ -369,13 +507,14 @@ padding:10px;
     
      height:210px;
     margin: 10px auto;
-    position:static;
-    color:#FFFFFA;
+    margin-left:3em;
+    color:#1b85c7;
     font-family:'Source Sans Pro', sans-serif; 
-    margin-top:2em;
+  
     width:100%;
 
 }
+
 
 
 
@@ -392,7 +531,9 @@ padding:10px;
 .contact-group {
     display: flex;
     align-items: center;
+    
     margin-left: 2em;
+    flex-direction: row;
 }
 
 #byuLink{
@@ -410,11 +551,11 @@ padding:10px;
     font-size: 20px;
    height:50px;
    text-align: center;
-   background-image: linear-gradient( #005DB3, #1C9CF6 , #48b3ff);
+      background-image: linear-gradient( #1b85c7,#269ce6 ,#1C9CF6 );
     color: #FFFFFA;
 }
   footer  {
-    background-image: linear-gradient( #005DB3, #1C9CF6 , #48b3ff);
+   
     padding: 5px 0;
     margin: auto;
     text-align: center;
@@ -589,7 +730,7 @@ div.places{
 .cities-title{
     font-family: 'Merriweather Sans', sans-serif;
     text-align: center;
- 
+    margin-top: 1.5em;
     color: #1b85c7;
 
 }
@@ -624,15 +765,15 @@ display: flex;
 height: 200px; 
 margin: 0 auto;
 z-index: 1;
- 
+/*box-shadow: 8px 8px 4px #7e9dcf;*/
   
 }
 
 .town img:hover{
+
   
-    position:relative;
+  
     transform: scale(1.2);
-    z-index:2;
     transition: all .4s ease;
 }
 h3{

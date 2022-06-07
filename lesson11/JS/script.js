@@ -70,7 +70,7 @@ fetch(requestURL)
     console.table(jsonObject);  
     const towns = jsonObject['towns'];
   
-    for(let i=0; i < towns.length; i++){
+    for(let i=0; i < towns.length; i++){   
        if(towns[i].name == "Preston" || towns[i].name == "Fish Haven"|| towns[i].name == "Soda Springs"){
     
       //Create elements in HTML
@@ -78,7 +78,7 @@ fetch(requestURL)
       let info = document.createElement("div");
       let h2 = document.createElement("h2");
       let motto = document.createElement("h3");
-      let year = document.createElement("p");
+      let year = document.createElement("p");  
       let population = document.createElement("p");
       let rainFall = document.createElement("p");
       let images = document.createElement("img");

@@ -13,8 +13,8 @@
     <link rel="stylesheet" href="CSS/large.css"/>
     <link rel="stylesheet" href="CSS/normalize.css"/>
 </head>
-<body>
-   
+<body >
+   <div class="city-body">
     <header class="clearfix"> 
         <img id=logo src="images/weather-icon.png" alt="logo" srcset="images/weather-icon.png" >
         <section class="headings">
@@ -24,7 +24,7 @@
     </header>
    
         <nav>
-            <button onclick="toggleMenu()">&#9776 Menu</button>
+            <button onclick="toggleMenu()">&#9776</button>
             <ul id="primaryNav" class="hide">
 
             <li><a href=index.html>Home</a></li>
@@ -36,27 +36,36 @@
             
         </ul>
     </nav>
+</div>
     <section id="friday-banner">
         <p>Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.</p>
     </section>
+
+    <h1 class="site-title" id="preston-title" >Preston Idaho</h1>
+    
+    <picture class="preston-img">
+                   
+        <img id="preston-image" src="images/preston original.jpg"  alt="Preston Mountains landscape">
+               
+     
+                        </picture>
+    <section class="wave">
+        <div class="wave-section"></div>
+    </section>
+
     <main>
-        <h1 id="title">Preston Idaho</h1>
+    
         <div class="pages-section">
             
-            <picture class="preston-img">
-                   
-            <img id="preston-image" src="images/preston original.jpg"  alt="Preston Mountains landscape">
-           
-                            </picture>
-        <section class="current-weather">
-            <h2>Weather Summary</h2>
-            <p>Currently :  <span id="current-2"></span>&nbsp;&nbsp;<span id="current-temp"></span>&deg;F</p>
-            
-            <p>High: <span id="high-temp">32</span>&deg;F</p>
-            <p>Wind Chill:&nbsp;<span id="windChillOutput"></span> </p>
-            <p>Wind Speed:&nbsp;<span id="windSpeed"></span>&nbsp;mph</p>
-            <p>Humidity:&nbsp;<span id="humidity"></span>%</p>
-        </section>
+            <section class="current-weather">
+                <h2>Weather Summary</h2>
+                <p>Currently :  <span id="current-2"></span>&nbsp;&nbsp;<span id="current-temp"></span>&deg;F</p>
+                
+                <p>High: <span id="high-temp">32</span>&deg;F</p>
+                <p>Wind Chill:&nbsp;<span id="windChillOutput"></span> </p>
+                <p>Wind Speed:&nbsp;<span id="windSpeed"></span>&nbsp;mph</p>
+                <p>Humidity:&nbsp;<span id="humidity"></span>%</p>
+            </section>
   
         <h1 id="forecast-title">Five Day Forecast</h1>
    
@@ -100,7 +109,7 @@
     <div id="events"></div>
     
     <section class="article-section">
-        <div class="article">
+        <div class="article-city">
             <img class="article-image" id="preston-article-image" src="images/preston-article.jpg" alt="kids under the rain">
             
             <h1 class="article-title ">Preston is a vacationer’s dream</h1>  <p class="author">by Saundra Hubbard from the Preston Citizen</p> 
@@ -111,11 +120,11 @@
         </div>
            
     </section>
-
+    <h1 id="contact-title">Contact information</h1>
     <section class="contact-section">
-        <h1 id="contact-title">Contact information</h1>
-        <div>
-        <img id="map-image" src="images/Preston mapa.png" alt="preston map">
+     
+        <div class="map">
+            <iframe class= "preston-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47359.8878046865!2d-111.91122878982105!3d42.10762099205315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C%20Idaho%2083263%2C%20EE.%20UU.!5e0!3m2!1ses!2sec!4v1654137597903!5m2!1ses!2sec" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" alt="preston map"></iframe>
         </div>
         <div class="contact">
             
